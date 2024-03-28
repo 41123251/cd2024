@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w5</title><link href="./" rel="alternate"></link><link href="./feeds/w5.atom.xml" rel="self"></link><id>./</id><updated>2024-03-28T06:34:45+08:00</updated><entry><title>2024 Spring 課程 第五週 週記</title><link href="./2024-Spring-w5-blog-tutorial.html" rel="alternate"></link><published>2024-03-21T13:00:00+08:00</published><updated>2024-03-28T06:34:45+08:00</updated><author><name>susu</name></author><id>tag:None,2024-03-21:./2024-Spring-w5-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w5</title><link href="./" rel="alternate"></link><link href="./feeds/w5.atom.xml" rel="self"></link><id>./</id><updated>2024-03-28T06:41:33+08:00</updated><entry><title>2024 Spring 課程 第五週 週記</title><link href="./2024-Spring-w5-blog-tutorial.html" rel="alternate"></link><published>2024-03-21T13:00:00+08:00</published><updated>2024-03-28T06:41:33+08:00</updated><author><name>susu</name></author><id>tag:None,2024-03-21:./2024-Spring-w5-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程&lt;/p&gt;
 
 
@@ -12,4 +12,7 @@
 &lt;a href="https://github.com/41123251/cd2024/files/14686871/Microsoft.Word.pdf"&gt;翻譯文檔(pdf)&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;已執行事項&lt;/h1&gt;
 &lt;p&gt;影片加上字幕 
- https://youtu.be/cB5bOqGAOt4?si=9Xcsj3XN5y8gnXDk&lt;/p&gt;</content><category term="w5"></category><category term="網誌編寫"></category></entry></feed>
+ https://youtu.be/cB5bOqGAOt4?si=9Xcsj3XN5y8gnXDk
+ 
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/cB5bOqGAOt4?si=_qyCtKZyVdDj6FhN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/p&gt;</content><category term="w5"></category><category term="網誌編寫"></category></entry></feed>
