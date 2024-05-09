@@ -1,6 +1,4 @@
 <h1>About</h1>
-<p><strong>期中影片</strong></p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/tVwftOFxJo0?si=8tfq00tvOm8Wocku" title="YouTube video player" width="560"></iframe></p>
 <p>網頁: <a href="https://41123251.github.io/cd2024/content/index.html">https://41123251.github.io/cd2024/content/index.html</a></p>
 <p>網誌: <a href="https://41123251.github.io/cd2024/blog/index.html" title="https://41123251.github.io/cd2024/blog/index.html">https://41123251.github.io/cd2024/blog/index.html</a></p>
 <p>簡報: <a href="https://41123251.github.io/cd2024/reveal/index.html">https://41123251.github.io/cd2024/reveal/index.html</a></p>
@@ -16,7 +14,73 @@
 <p>(6)</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/cB5bOqGAOt4?si=x97C3S1yJ8OndGRA" title="YouTube video player" width="560"></iframe></p>
 <p><a href="https://github.com/41123251/cd2024/files/14773072/cd2024_2b_3_.Github.txt">字幕檔</a></p>
-<h1>cmsimde</h1>
+<h1>w9期中</h1>
+<p><strong>期中影片</strong></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/tVwftOFxJo0?si=8tfq00tvOm8Wocku" title="YouTube video player" width="560"></iframe></p>
+<h1>w10</h1>
+<p></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import csv
+from browser import window, ajax
+
+def fetch_csv_data():
+    # CSV 檔案網址
+    url = "https://mdecd2024.github.io/2bstud-2bsite/downloads/2b.txt"
+
+    def on_complete(req):
+        if req.status == 200 or req.status == 0:
+            # 讀取 CSV 檔案內容
+            content = req.text
+
+            # 使用 StringIO 將字符串轉換為文件對象，以便傳遞給 csv.reader
+            import io
+            csv_file = io.StringIO(content)
+
+            # 創建 CSV reader
+            reader = csv.reader(csv_file)
+
+            # 建立空列表儲存資料
+            data = []
+
+            # 遍歷每一行資料
+            for row in reader:
+                # 忽略空行
+                if not row:
+                    continue
+
+                # 提取GitHub用戶名
+                github_username = row[1]
+
+                # 添加倉庫連結和網站連結
+                if github_username != "":
+                    # 假設倉庫連結和網站連結與GitHub用戶名相關，以示例為準
+                    repository_link = f"https://github.com/{github_username}"
+                    website_link = f"https://{github_username}.github.io/cd2024"
+                else:
+                    repository_link = ""
+                    website_link = ""
+
+                # 將資料加入列表，並加入倉庫連結和網站連結
+                data.append(row + [repository_link, website_link])
+
+            # 印出結果
+            print(data)
+        else:
+            print("Error:", req.text)
+
+    # 發送 AJAX 請求
+    req = ajax.ajax()
+    req.bind('complete', on_complete)
+    req.open('GET', url, True)
+    req.set_header('content-type', 'application/x-www-form-urlencoded')
+    req.send()
+
+# 呼叫函式讀取 CSV 資料
+fetch_csv_data()
+</pre>
+<p></p>
+<p>
+<script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
+</p><h1>cmsimde</h1>
 <p><span style="background-color: #ccffcc;">SMap</span> - SiteMap - 依照階次列出網站的所有頁面.</p>
 <p><span style="background-color: #ccffcc;">EditA</span> - Edit All page - 將所有頁面放入編輯模式中, 主要用來處理頁面搬遷, 刪除或決定衝突頁面內容版本.</p>
 <p><span style="background-color: #ccffcc;">Edit</span> - Edit page - 先選擇要編輯的單一頁面後, 再點選 Edit, 即可進入單一頁面的編輯模式.</p>
