@@ -142,71 +142,8 @@ img.add_border {
           </div>
 
         </header>
-    <div id="tipue_search_content">w9期中 << <a href='w9期中.html'>Previous</a> <a href='w12 足球模擬.html'>Next</a> >> w12 足球模擬<br /><h1>w10</h1>
-<p></p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import csv
-from browser import window, ajax
-
-def fetch_csv_data():
-    # CSV 檔案網址
-    url = "https://mdecd2024.github.io/2bstud-2bsite/downloads/2b.txt"
-
-    def on_complete(req):
-        if req.status == 200 or req.status == 0:
-            # 讀取 CSV 檔案內容
-            content = req.text
-
-            # 使用 StringIO 將字符串轉換為文件對象，以便傳遞給 csv.reader
-            import io
-            csv_file = io.StringIO(content)
-
-            # 創建 CSV reader
-            reader = csv.reader(csv_file)
-
-            # 建立空列表儲存資料
-            data = []
-
-            # 遍歷每一行資料
-            for row in reader:
-                # 忽略空行
-                if not row:
-                    continue
-
-                # 提取GitHub用戶名
-                github_username = row[1]
-
-                # 添加倉庫連結和網站連結
-                if github_username != "":
-                    # 假設倉庫連結和網站連結與GitHub用戶名相關，以示例為準
-                    repository_link = f"https://github.com/{github_username}"
-                    website_link = f"https://{github_username}.github.io/cd2024"
-                else:
-                    repository_link = ""
-                    website_link = ""
-
-                # 將資料加入列表，並加入倉庫連結和網站連結
-                data.append(row + [repository_link, website_link])
-
-            # 印出結果
-            print(data)
-        else:
-            print("Error:", req.text)
-
-    # 發送 AJAX 請求
-    req = ajax.ajax()
-    req.bind('complete', on_complete)
-    req.open('GET', url, True)
-    req.set_header('content-type', 'application/x-www-form-urlencoded')
-    req.send()
-
-# 呼叫函式讀取 CSV 資料
-fetch_csv_data()
-</pre>
-<p></p>
-<p>
-<script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
-</p>
-<br />w9期中 << <a href='w9期中.html'>Previous</a> <a href='w12 足球模擬.html'>Next</a> >> w12 足球模擬</div>
+    <div id="tipue_search_content">w10 << <a href='w10.html'>Previous</a> <a href='w12 NX1872.html'>Next</a> >> w12 NX1872<br /><h1>w12 足球模擬</h1>
+<p><img alt="" height="430" src="./../images/螢幕擷取畫面 2024-05-16 142714.png" width="800"/></p><br />w10 << <a href='w10.html'>Previous</a> <a href='w12 NX1872.html'>Next</a> >> w12 NX1872</div>
 
     <!-- footer -->
       <div class="container">
